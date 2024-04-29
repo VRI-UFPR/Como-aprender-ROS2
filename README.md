@@ -26,7 +26,7 @@ turtlesim turtlesim_node
 
 # Motivação 
 
-Completando esse projeto com o turtlesim você vai aprender os conceito básicos do ROS2. Esses conceitos serão usados em projetos mais complexos que serão desenvolvidos ao longo dos projetos nesse repositório.
+Completando esse projeto com o turtlesim você vai aprender os conceito básicos do ROS2. Esses conceitos serão usados em projetos mais complexos que serão desenvolvidos ao longo de outras tarefas nesse repositório.
 
 # Tarefa 1: Introdução Turtlesim 🐢
 
