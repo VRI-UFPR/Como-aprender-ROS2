@@ -31,7 +31,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 # controlar o robo
 ros2 run turtlebot3_teleop teleop_keyboard
 
-# ou se preferir deixar o robo autonomo
+### se preferir deixar o robo autonomo
 
 ros2 launch nav2_bringup navigation_launch.py use_sim_time:=True & ros2 run custom_explorer explorer
 
