@@ -12,6 +12,12 @@ precisaremos também instalar o podman, por favor siga a documentação
 
 https://podman.io/docs/installation#installing-on-linux
 
+então crie uma distrobox
 
+distrobox create --name ros_box test --init --image ubuntu:22.04 --additional-packages "systemd" && distrobox enter ros_box
+
+pode demorar um pouco...
+
+# instalando ros no distrobox 
 
 
