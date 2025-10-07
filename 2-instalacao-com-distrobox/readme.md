@@ -25,6 +25,6 @@ para instalar o ros no distrobox, é exatamente o mesmo processo para instalar n
 not found: "/opt/ros/humble/local_setup.bash"
 bash: /opt/ros/humble/setup.bash: Arquivo ou diretório inexistente"
 
-para contornar esse problema podemos colocar
+para contornar esse problema podemos colocar em uma estrutura condicional, que verifique se pelo menos um desses arquivos existe antes de executar os comandos.
 
 
