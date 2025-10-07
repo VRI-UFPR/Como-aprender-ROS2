@@ -14,10 +14,17 @@ https://podman.io/docs/installation#installing-on-linux
 
 então crie uma distrobox
 
-distrobox create --name ros_box test --init --image ubuntu:22.04 --additional-packages "systemd" && distrobox enter ros_box
+distrobox create --name ros_box --init --image ubuntu:22.04 --additional-packages "systemd" && distrobox enter ros_box
 
 pode demorar um pouco...
 
 # instalando ros no distrobox 
+
+para instalar o ros no distrobox, é exatamente o mesmo processo para instalar no ubuntu 22.04 LTS, porém há algumas considerações. O distrobox utiliza os arquivos de configuração do seu sistema, inclusive o bashrc, que utilizamos para setar o ambiente automaticamente sempre que abrirmos um novo terminal. Então se você adicionar as linhas no .bashrc, sempre que abrir um novo terminal haverá mensagens de erro:
+"bash: /opt/ros/humble/setup.bash: Arquivo ou diretório inexistente
+not found: "/opt/ros/humble/local_setup.bash"
+bash: /opt/ros/humble/setup.bash: Arquivo ou diretório inexistente"
+
+para contornar esse problema podemos colocar
 
 
