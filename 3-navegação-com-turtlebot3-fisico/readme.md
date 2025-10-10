@@ -8,6 +8,10 @@ primeiro ligue o turtlebot3 utilizando o switch localizado na placa openCR. cert
 
 - ssh jaguatirica@10.0.0.4
 
-se estiver tudo certo aparecerá um prompt pedindo a senha, que é a mesma senha super secreta do VRI.
+se estiver tudo certo aparecerá um prompt pedindo a senha, que é a mesma senha super secreta do VRI. 
 
+execute o comando:
+- ros2 launch turtlebot3_bringup robot.launch.py
+
+agora o robo já está funcionando.
 
