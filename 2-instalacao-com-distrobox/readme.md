@@ -27,4 +27,14 @@ bash: /opt/ros/humble/setup.bash: Arquivo ou diretório inexistente"
 
 para contornar esse problema podemos colocar em uma estrutura condicional, que verifique se pelo menos um desses arquivos existe antes de executar os comandos.
 
+exemplo:
+
+- if [ -f "/opt/ros/humble/setup.bash" ]; then
+-	source /opt/ros/humble/setup.bash
+-	source /usr/share/gazebo/setup.sh
+-	source ~/turtlebot3_ws/install/setup.bash
+-	export ROS_DOMAIN_ID=30
+-	source /usr/share/gazebo/setup.sh
+-	source /opt/ros/humble/setup.bash
+-fi
 
